@@ -1,0 +1,18 @@
+.social-icon {
+  margin: 3px;
+  font-size: 40px;
+}
+
+.selfie {
+  width: 225px;
+  height: 225px;
+  border-radius: 125px;
+}
+
+.name {
+  font-size: 40px;
+}
+
+.whoAmI {
+  max-width: 325px;
+}

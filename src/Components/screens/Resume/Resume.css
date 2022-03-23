@@ -1,0 +1,29 @@
+body {
+  background-color: whitesmoke;
+}
+
+a {
+  color: cadetblue;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.divider {
+  border-bottom: grey 1px solid;
+}
+
+.techdomain {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* For Certification text center, probably a better way to do this */
+.place-content-center {
+  place-content: center;
+}
