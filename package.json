@@ -5,6 +5,11 @@
   "dependencies": {
     "@aws-amplify/cli": "^7.6.25",
     "@aws-amplify/ui-react": "^2.10.3",
+    "@aws-cdk/aws-certificatemanager": "^1.150.0",
+    "@aws-cdk/aws-cloudfront-origins": "^1.150.0",
+    "@aws-cdk/aws-route53": "^1.150.0",
+    "@aws-cdk/aws-route53-patterns": "^1.150.0",
+    "@aws-cdk/aws-route53-targets": "^1.150.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.0",
     "@fortawesome/free-brands-svg-icons": "^6.1.0",
     "@fortawesome/free-solid-svg-icons": "^6.1.0",
@@ -34,6 +39,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "build:local": "env-cmd -e local yarn build",
     "start:local": "env-cmd -e local yarn start"
   },
   "eslintConfig": {
