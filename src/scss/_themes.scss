@@ -1,0 +1,16 @@
+$light-bg: white;
+$light-text-color: black;
+
+$dark-bg: black;
+$dark-text-color: white;
+
+$themes: (
+   light: (
+      bg: $light-bg,
+      text: $light-text-color
+   ),
+   dark: (
+      bg: $dark-bg,
+      text: $dark-text-color
+   )
+)

@@ -21,12 +21,14 @@ export default function VideoPlayer(props: VideoProps) {
   const videoNode = useRef<HTMLVideoElement>(null) as any;
   const player = useRef<VideoJsPlayer>();
 
-  const combinedOptions = {
-    ...initialOptions,
-    ...props.options,
-  }
+  
   // instantiate Video.js
   useEffect(() => {
+    const combinedOptions = {
+      ...initialOptions,
+      ...props.options,
+    }
+    
     player.current = videojs(videoNode.current, combinedOptions);
     /*.ready(function() {
       console.log("onPlayerReady", this);

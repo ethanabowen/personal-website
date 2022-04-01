@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 
 import "./App.css";
+import "../../../scss/index.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
@@ -13,45 +14,51 @@ import { welcome } from "../../../Constants";
 import Security from "../../atoms/Security/Security";
 import Storage from "../../atoms/Storage/Storage";
 
+import ThemeSetter from "../../atoms/Theme/ThemeSetter";
+import ThemeProvider from "../../atoms/Theme/ThemeProvider";
+
 export default function App() {
   console.log(welcome);
 
   return (
-    <div className="container">
-      <Navbar expand="lg">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="m-auto">
-            <Nav.Link className="font-weight-bold" as={Link} to="/">
-              Home
-            </Nav.Link>
-            <Nav.Link className="font-weight-bold" as={Link} to="/resume">
-              Resume
-            </Nav.Link>
-            <Nav.Link className="font-weight-bold" as={Link} to="/projects">
-              Projects
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <ThemeProvider>        
+        <div className="main-theme">
+        <ThemeSetter />
+          <Navbar expand="lg">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="m-auto">
+                <Nav.Link className="font-weight-bold" as={Link} to="/">
+                  Home
+                </Nav.Link>
+                <Nav.Link className="font-weight-bold" as={Link} to="/resume">
+                  Resume
+                </Nav.Link>
+                <Nav.Link className="font-weight-bold" as={Link} to="/projects">
+                  Projects
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
 
-      {/* <Routes> looks through its children <Route>s and
+          {/* <Routes> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-      <Routes>
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route
-          path="/hub"
-          element={
-            <WebsiteAuth>
-              <Hub />
-            </WebsiteAuth>
-          }
-        />
-        <Route path="/" element={<Resume />} />
-        <Route path="/hub/security" element={<Security/>} />
-        <Route path="/hub/storage" element={<Storage/>} />
-      </Routes>
-    </div>
+          <Routes>
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route
+              path="/hub"
+              element={
+                <WebsiteAuth>
+                  <Hub />
+                </WebsiteAuth>
+              }
+            />
+            <Route path="/" element={<Resume />} />
+            <Route path="/hub/security" element={<Security />} />
+            <Route path="/hub/storage" element={<Storage />} />
+          </Routes>
+        </div>
+      </ThemeProvider>
   );
 }

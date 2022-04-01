@@ -1,0 +1,30 @@
+@import "./themes";
+
+@mixin themify() {
+  // for each theme
+  @each $theme, $map in $themes {
+    // create a theme class
+    .theme-#{$theme} & {
+      $theme-map: () !global; // global map variable with theme values
+      // for each class in theme get K,V pair and assign to global theme variable
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global; // map-merge is a put
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@mixin applyThemeByContext($bg) {
+  @include themify() {
+    background: themed($bg);
+    color: getThemeTextColor(themed($text-color))
+  }
+}
