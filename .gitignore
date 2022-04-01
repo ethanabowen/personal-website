@@ -28,3 +28,6 @@ cdk/cdk.out
 cdk/node_modules
 cdk/cdk.context.json
 cdk/cdk.json
+
+# scss
+**.css**
