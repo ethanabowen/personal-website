@@ -1,7 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 
 import "./App.css";
-import "../../../scss/index.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 

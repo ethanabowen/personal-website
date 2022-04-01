@@ -1,18 +1,26 @@
-$light-bg: white;
-$light-text-color: black;
-
-$dark-bg: black;
-$dark-text-color: white;
+$poo-primary-1: #938172;
+$poo-primary-2: #541f14;
+$poo-primary-3: #020304;
+$poo-primary-4: #cc9e61;
+$poo-primary-5: #626266;
 
 $themes: (
-   light: (
-      bg: $light-bg,
-      text: $light-text-color,
-      navLink: cadetblue
-   ),
-   dark: (
-      bg: $dark-bg,
-      text: $dark-text-color,
-      navLink: purple
-   )
-)
+  light: (
+    background-color: whitesmoke,
+    text-color: black,
+    nav-link-color: cadetblue,
+    link-color: cadetblue,
+  ),
+  dark: (
+    background-color: black,
+    text-color: whitesmoke,
+    nav-link-color: purple,
+    link-color: purple,
+  ),
+  poo: (
+    background-color: $poo-primary-1,
+    text-color: $poo-primary-2,
+    nav-link-color: $poo-primary-3,
+    link-color: $poo-primary-4,
+  ),
+);

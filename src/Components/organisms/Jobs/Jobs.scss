@@ -1,0 +1,18 @@
+@import "../../../scss/functions";
+@import "../../../scss/mixins";
+
+.card {
+  @include themify() {
+  background-color: theme("background-color");
+  border: grey 1px;
+  }
+}
+
+.company {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.company-icon {
+  font-size: 20px;
+}

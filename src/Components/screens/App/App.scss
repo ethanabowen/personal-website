@@ -1,0 +1,26 @@
+@import "../../../scss/functions";
+@import "../../../scss/mixins";
+
+.main-theme {
+  @include themify() {
+    background: theme("background-color");
+    color: theme("text-color");
+  }
+
+  font-family: sans-serif;
+}
+
+a {
+  @include themify() {
+    color: theme("link-color");
+  }
+}
+
+.nav-link {
+  @include themify() {
+    color: theme("nav-link-color") !important;
+  }
+}
+.nav-link:hover {
+  text-decoration: underline;
+}

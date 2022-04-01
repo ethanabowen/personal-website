@@ -18,4 +18,4 @@ export default function ThemeSetter() {
   );
 }
 
-const themeOptions = [{ value: "light" }, { value: "dark" }];
+const themeOptions = [{ value: "light" }, { value: "dark" }, { value: "poo" }];
