@@ -7,10 +7,12 @@ $dark-text-color: white;
 $themes: (
    light: (
       bg: $light-bg,
-      text: $light-text-color
+      text: $light-text-color,
+      navLink: cadetblue
    ),
    dark: (
       bg: $dark-bg,
-      text: $dark-text-color
+      text: $dark-text-color,
+      navLink: purple
    )
 )
