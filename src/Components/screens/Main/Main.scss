@@ -1,0 +1,69 @@
+@import "../../../scss/functions";
+@import "../../../scss/mixins";
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  /*(background-image: linear-gradient(
+    45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ffc75f,
+    #f9f871
+  );
+  background-size: 400%;
+  animation: bg-animation 5s infinite alternate;*/
+}
+
+/*@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}*/
+
+.box {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 34%;
+  justify-content: center;
+  align-content: center;
+  @include themify() {
+    background: theme("background-color");
+    color: theme("text-color");
+    border: 5px solid theme("text-color");
+  }
+  cursor: pointer;
+  width: 10em;
+  height: 10em;
+  margin: 1em;
+  text-decoration: none;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+}
+
+.text {
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: bold;
+  font-size: 3.3rem;
+  @include themify() {
+    color: theme("text-color");
+  }
+  line-height: 0.8;
+}
+
+@media (max-width: 991px) {
+  /*sm */
+  .box {
+    flex-basis: 51%;
+  }
+  .text {
+    font-size: 2.3rem;
+  }
+}
