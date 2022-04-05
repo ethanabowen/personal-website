@@ -1,14 +1,14 @@
-import "./ThemeSetter.css";
+import "./ColorThemeSetter.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBrush } from "@fortawesome/free-solid-svg-icons";
 
 import { useContext, useState } from "react";
 
-import ThemeContext from "./ThemeContext";
+import ColorThemeContext from "./ColorThemeContext";
 
-export default function ThemeSetter() {
-  const { theme, setTheme } = useContext(ThemeContext);
+export default function ColorThemeSetter() {
+  const { colorTheme, setColorTheme } = useContext(ColorThemeContext);
   const [showMenu, setShowMenu] = useState(false);
 
   <FontAwesomeIcon icon={faBrush} />;
@@ -17,17 +17,17 @@ export default function ThemeSetter() {
       className="theme--selector dropdown"
       onClick={() => setShowMenu(!showMenu)}
     >
-      <FontAwesomeIcon icon={faBrush} className="icon" />
+      <FontAwesomeIcon icon={faBrush} className="theme--color--icon" />
       {showMenu && (
         <div className="dropdown-content">
-          {themeOptions.map((option, index) => {
+          {colorThemeOptions.map((color, index) => {
             return (
               <button
-                key={`${option}_theme_btn`}
-                value={option}
-                onClick={(e) => setTheme(e.currentTarget.value)}
+                key={`${color}_theme_btn`}
+                value={color}
+                onClick={(e) => setColorTheme(e.currentTarget.value)}
               >
-                {option}
+                {color}
               </button>
             );
           })}
@@ -37,4 +37,4 @@ export default function ThemeSetter() {
   );
 }
 
-const themeOptions = ["light", "dark", "poo", "tron", "retro"];
+const colorThemeOptions = ["light", "dark", "retro"];

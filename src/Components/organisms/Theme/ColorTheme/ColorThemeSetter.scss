@@ -1,0 +1,48 @@
+@import "../../../../scss/functions";
+@import "../../../../scss/mixins";
+
+.theme--selector {
+  float: right;
+}
+
+.theme--color--icon {
+  margin: 10px;
+  height: 5vh;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  float: left;
+  margin: 0 -2em;
+  padding: 0;
+  max-width: 80px;
+  border: 2px solid;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown button {
+  width: 76px;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 2px;
+  text-transform: capitalize;
+  font-weight: bold;
+  @include themify() {
+    color: theme("text-color");
+    border-color: theme("text-color");
+    
+  }
+}
+
+.dropdown button:last-child {
+  border-bottom: none;
+}

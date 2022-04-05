@@ -1,15 +1,3 @@
-$poo-primary-1: #938172;
-$poo-primary-2: #541f14;
-$poo-primary-3: #020304;
-$poo-primary-4: #cc9e61;
-$poo-primary-5: #626266;
-
-$tron-primary-1:black;
-$tron-primary-2:purple;
-$tron-primary-3:#652078;
-$tron-primary-4:#D2044A;
-$tron-primary-5:#FF5D20;
-
 $retro-primary-1:#120458;
 $retro-primary-2:#ff00a0;
 $retro-primary-3:#fe75fe;
@@ -20,8 +8,8 @@ $themes: (
   light: (
     background-color: whitesmoke,
     text-color: black,
-    nav-link-color: cadetblue,
-    link-color: cadetblue,
+    nav-link-color: black,
+    link-color: black,
   ),
   dark: (
     background-color: black,
@@ -29,22 +17,10 @@ $themes: (
     nav-link-color: white,
     link-color: white,
   ),
-  poo: (
-    background-color: $poo-primary-1,
-    text-color: $poo-primary-2,
-    nav-link-color: $poo-primary-3,
-    link-color: $poo-primary-4,
-  ),
-  tron: (
-    background-color: $tron-primary-1,
-    text-color: $tron-primary-2,
-    nav-link-color: $tron-primary-3,
-    link-color: $tron-primary-4,
-  ),
   retro: (
     background-color: $retro-primary-1,
     text-color: $retro-primary-2,
     nav-link-color: $retro-primary-3,
     link-color: $retro-primary-4,
-  ),
+  )
 );

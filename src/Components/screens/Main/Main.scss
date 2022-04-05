@@ -8,6 +8,13 @@
   align-items: center;
   height: 100vh;
 }
+.box--icon {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 25%;
+
+
+}
 
 .box {
   display: flex;
@@ -18,16 +25,21 @@
   @include themify() {
     background: theme("background-color");
     color: theme("text-color");
+    box-shadow: 0px 8px 16px 0px theme("text-color");
   }
   cursor: pointer;
   width: 10em;
   height: 10em;
   margin: 1em;
   text-decoration: none;
-  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
 }
 
 .text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  
   border: 0;
   text-transform: uppercase;
   font-weight: 900;
