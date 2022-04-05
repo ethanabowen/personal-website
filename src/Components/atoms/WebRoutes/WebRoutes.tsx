@@ -10,24 +10,23 @@ import Security from "../../atoms/Security/Security";
 import Storage from "../../atoms/Storage/Storage";
 
 export default function WebRoutes() {
-/* <Routes> looks through its children <Route>s and
+  /* <Routes> looks through its children <Route>s and
             renders the first one that matches the current URL. */
   return (
-   
-          <Routes>
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route
-              path="/hub"
-              element={
-                <WebsiteAuth>
-                  <Hub />
-                </WebsiteAuth>
-              }
-            />
-            <Route path="/" element={<Main />} />
-            <Route path="/hub/security" element={<Security />} />
-            <Route path="/hub/storage" element={<Storage />} />
-          </Routes>
+    <Routes>
+      <Route path="/resume" element={<Resume />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route
+        path="/hub"
+        element={
+          <WebsiteAuth>
+            <Hub />
+          </WebsiteAuth>
+        }
+      />
+      <Route path="/" element={<Main />} />
+      <Route path="/hub/security" element={<Security />} />
+      <Route path="/hub/storage" element={<Storage />} />
+    </Routes>
   );
 }

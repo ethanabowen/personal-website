@@ -1,0 +1,43 @@
+@import "../../../scss/functions";
+@import "../../../scss/mixins";
+
+.stars {
+  display: contents;
+  overflow: hidden;
+  background: transparent;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  border-radius: 0%;
+  @include themify() {
+    background: theme("text-color");
+  }
+}
+
+@for $i from 1 through 120 {
+  @keyframes star-animation-#{$i} {
+    100% {
+      transform: translate3d(
+        (random(95) * 1vw),
+        (random(95) * 1vh),
+        (random(100) * 5px)
+      );
+    }
+  }
+
+  .star:nth-child(#{$i}) {
+    animation: star-animation-#{$i} 60s infinite;
+    $size: random(5) + 5 + px;
+    opacity: calc(random(100) / 100);
+    height: $size;
+    width: $size;
+    animation-delay: -$i * 0.2s;
+    transform: translate3d(
+      (random(95) * 1vw),
+      (random(95) * 1vh),
+      (random(100) * 5px)
+    );
+  }
+}
