@@ -36,4 +36,4 @@ export default function CssSetter() {
   );
 }
 
-const cssOptions = ["floaters", "none"];
+const cssOptions = ["floaters", "card follow", "none"];
