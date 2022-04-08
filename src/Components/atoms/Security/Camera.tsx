@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import KinesisVideo from "aws-sdk/clients/kinesisvideo";
 import KinesisVideoArchivedMedia from "aws-sdk/clients/kinesisvideoarchivedmedia";
 import AWS from "aws-sdk";
 import { Amplify, Auth } from "aws-amplify";
-import VideoPlayer from "./VideoPlayer";
 import { VideoJsPlayerOptions } from "video.js";
+const VideoPlayer = React.lazy(() => import("./VideoPlayer"));
 
 AWS.config.region = "us-east-1";
 
@@ -110,7 +110,9 @@ export default function Camera(props: any) {
       {isVideoSrcSet() && (
         <div>
           <div className="pl-1 pb-1 strong fs-1">{props.cameraName}</div>
-          <VideoPlayer options={videoJsOptions} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <VideoPlayer options={videoJsOptions} />
+          </Suspense>
         </div>
       )}
     </>

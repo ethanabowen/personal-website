@@ -40,18 +40,15 @@ export default function WebsiteAuth(props: any) {
     Auth.currentAuthenticatedUser().then(
       (cognitoUser) => {
         if (!cognitoUser) {
-          console.log("federated sign in")
           Auth.federatedSignIn({
             provider: CognitoHostedUIIdentityProvider.Google,
           }); //redirects to Google sign in
         } else {
-          console.log("set cognito user")
           setCognitoUser(cognitoUser);
         }
       },
       (error) => {
         console.log(error);
-        console.log("federated sign in")
         Auth.federatedSignIn({
           provider: CognitoHostedUIIdentityProvider.Google,
         }); //redirects to Google sign in

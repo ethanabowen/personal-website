@@ -8,6 +8,7 @@ import CssThemeContext from "./CssThemeContext";
 import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
 
 export default function CssSetter() {
+  // eslint-disable-next-line
   const { cssTheme, setCssTheme } = useContext(CssThemeContext);
   const [showMenu, setShowMenu] = useState(false);
 

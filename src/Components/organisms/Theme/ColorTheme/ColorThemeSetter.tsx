@@ -8,6 +8,7 @@ import { useContext, useState } from "react";
 import ColorThemeContext from "./ColorThemeContext";
 
 export default function ColorThemeSetter() {
+  // eslint-disable-next-line
   const { colorTheme, setColorTheme } = useContext(ColorThemeContext);
   const [showMenu, setShowMenu] = useState(false);
 

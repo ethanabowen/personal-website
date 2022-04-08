@@ -25,8 +25,22 @@ export default function WebRoutes() {
         }
       />
       <Route path="/" element={<Main />} />
-      <Route path="/hub/security" element={<Security />} />
-      <Route path="/hub/storage" element={<Storage />} />
+      <Route
+        path="/hub/security"
+        element={
+          <WebsiteAuth>
+            <Security />
+          </WebsiteAuth>
+        }
+      />
+      <Route
+        path="/hub/storage"
+        element={
+          <WebsiteAuth>
+            <Storage />
+          </WebsiteAuth>
+        }
+      />
     </Routes>
   );
 }
