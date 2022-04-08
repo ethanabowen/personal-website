@@ -55,4 +55,11 @@ export const getRoute53Records = (
     recordName: url,
     target: RecordTarget.fromAlias(new CloudFrontTarget(distribution)),
   });
+
+  // TODO: revisit www redirect with Cogito and Google auth
+  // new HttpsRedirect(scope, "EthanABowenWebsiteHttpsRedirect", {
+  //   zone: hostedZone,
+  //   recordNames: [`www.${url}`],
+  //   targetDomain: distribution.distributionDomainName,
+  // });
 };
