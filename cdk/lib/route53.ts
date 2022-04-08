@@ -55,10 +55,4 @@ export const getRoute53Records = (
     recordName: url,
     target: RecordTarget.fromAlias(new CloudFrontTarget(distribution)),
   });
-
-  new HttpsRedirect(scope, "EthanABowenWebsiteHttpsRedirect", {
-    zone: hostedZone,
-    recordNames: [`www.${url}`],
-    targetDomain: url,
-  });
 };

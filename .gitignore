@@ -23,7 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # cdk
-cdk/bin
 cdk/cdk.out
 cdk/node_modules
 cdk/cdk.context.json

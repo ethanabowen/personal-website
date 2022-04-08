@@ -17,7 +17,7 @@ import { ICertificate } from "aws-cdk-lib/aws-certificatemanager";
  * @param certificate SSL cert
  * @param bucket S3 bucket
  * @param url domain url
- * @returns 
+ * @returns
  */
 export const getCloudFrontDistribution = (
   scope: Construct,
@@ -25,7 +25,7 @@ export const getCloudFrontDistribution = (
   bucket: Bucket,
   url: string
 ) => {
-  const oai = new OriginAccessIdentity(scope, "PersonalWebsiteOAI");
+  const oai = new OriginAccessIdentity(scope, "EthanBowenWebsiteOAI");
   bucket.grantRead(oai);
 
   const originConfigs = {
@@ -33,7 +33,12 @@ export const getCloudFrontDistribution = (
       s3BucketSource: bucket,
       originAccessIdentity: oai,
     },
-    behaviors: [{ isDefaultBehavior: true }],
+    behaviors: [
+      {
+        isDefaultBehavior: true,
+        viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+      },
+    ],
   };
 
   const errorConfigurations: CfnDistribution.CustomErrorResponseProperty[] = [
@@ -50,15 +55,15 @@ export const getCloudFrontDistribution = (
   ];
 
   const viewerCertificate = ViewerCertificate.fromAcmCertificate(certificate, {
-    aliases:[url]
-  })
+    aliases: [url],
+  });
   const distribution = new cloudfront.CloudFrontWebDistribution(
     scope,
     "EthanABowenWebsiteCFD",
     {
       originConfigs: [originConfigs],
       errorConfigurations,
-      viewerCertificate //http or https, custom domain
+      viewerCertificate, //http or https, custom domain
     }
   );
 
