@@ -74,11 +74,7 @@ export default function Jobs() {
   );
 }
 
-function Job(params: {
-  showTitle: string;
-  showDivider: string;
-  job: JobType;
-}) {
+function Job(params: { showTitle: string; showDivider: string; job: JobType }) {
   const job = params.job;
   return (
     <div className={"card col-sm-10 col-xs-12"}>

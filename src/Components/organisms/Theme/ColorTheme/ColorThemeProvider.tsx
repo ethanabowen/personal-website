@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import ColorThemeContext, { initialColorThemeState } from "./ColorThemeContext";
 
 const ThemeProvider = ({ children }: any) => {
-  const [colorTheme, setColorTheme] = useState(initialColorThemeState.colorTheme);
+  const [colorTheme, setColorTheme] = useState(
+    initialColorThemeState.colorTheme
+  );
 
   // Get theme from local storage and set to local state if it exists
   useEffect(() => {

@@ -12,12 +12,7 @@ export default function Certifications() {
   );
 }
 
-function Certification({
-  link,
-  image,
-  startDate,
-  endDate,
-}: CertificationType) {
+function Certification({ link, image, startDate, endDate }: CertificationType) {
   return (
     <div className="col-auto">
       <div className="row">

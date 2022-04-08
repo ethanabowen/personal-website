@@ -5,7 +5,7 @@ import videojs, { VideoJsPlayerOptions, VideoJsPlayer } from "video.js";
 import "video.js/dist/video-js.css";
 
 const initialOptions: VideoJsPlayerOptions = {
-  aspectRatio:"16:9",
+  aspectRatio: "16:9",
   controls: true,
   controlBar: {
     volumePanel: {
@@ -21,14 +21,13 @@ export default function VideoPlayer(props: VideoProps) {
   const videoNode = useRef<HTMLVideoElement>(null) as any;
   const player = useRef<VideoJsPlayer>();
 
-  
   // instantiate Video.js
   useEffect(() => {
     const combinedOptions = {
       ...initialOptions,
       ...props.options,
-    }
-    
+    };
+
     player.current = videojs(videoNode.current, combinedOptions);
     /*.ready(function() {
       console.log("onPlayerReady", this);
@@ -42,7 +41,5 @@ export default function VideoPlayer(props: VideoProps) {
     };
   }, [props.options, videoNode]);
 
-  return (
-      <video ref={videoNode} className="video-js" />
-  );
+  return <video ref={videoNode} className="video-js" />;
 }

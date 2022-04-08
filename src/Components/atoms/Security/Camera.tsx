@@ -10,9 +10,7 @@ AWS.config.region = "us-east-1";
 
 export default function Camera(props: any) {
   const [kinesisStreamUrl, setKinesisStreamUrl] = useState() as any;
-  const [videoJsOptions, setVideoJSOptions] = useState<
-    VideoJsPlayerOptions
-  >();
+  const [videoJsOptions, setVideoJSOptions] = useState<VideoJsPlayerOptions>();
 
   useEffect(() => {
     const getKinesisUrl = async () => {
@@ -101,10 +99,12 @@ export default function Camera(props: any) {
   };
 
   const isVideoSrcSet = () => {
-    return videoJsOptions != null && 
+    return (
+      videoJsOptions != null &&
       videoJsOptions.sources != null &&
       videoJsOptions.sources[0].src != null
-  }
+    );
+  };
   return (
     <>
       {isVideoSrcSet() && (

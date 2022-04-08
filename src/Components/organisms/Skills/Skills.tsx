@@ -1,5 +1,5 @@
 import "./Skills.css";
-import {Skill as SkillType } from "../../../types";
+import { Skill as SkillType } from "../../../types";
 import { skills } from "../../../Constants";
 
 export default function Skills() {
