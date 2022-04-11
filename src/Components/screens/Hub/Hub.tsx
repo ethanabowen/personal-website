@@ -10,13 +10,13 @@ export default function Hub() {
   return (
     <div className="main--hub">
       <div className="text--title">Bowen Hub</div>
-      <Link id="storage-link" className="box" to="/resume">
-        <FontAwesomeIcon icon={faBucket} className="box--icon" />
-        <span className="text">Storage</span>
-      </Link>
-      <Link id="security-link" className="box" to="/resume">
+      <Link id="security-link" className="box" to="/hub/security">
         <FontAwesomeIcon icon={faCamera} className="box--icon" />
         <span className="text">Security</span>
+      </Link>
+      <Link id="storage-link" className="box" to="/hub/storage">
+        <FontAwesomeIcon icon={faBucket} className="box--icon" />
+        <span className="text">Storage</span>
       </Link>
 
       <button onClick={() => Auth.signOut()}>Sign Out</button>
