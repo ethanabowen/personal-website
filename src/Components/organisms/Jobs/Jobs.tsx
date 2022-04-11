@@ -97,7 +97,7 @@ function Job(params: { showTitle: string; showDivider: string; job: JobType }) {
             </span>
             <span className="col ml-2 text-left">
               {job.startDate} -{" "}
-              {job.endDate == "Present" ? (
+              {job.endDate === "Present" ? (
                 <span className="strong">{job.endDate}</span>
               ) : (
                 job.endDate

@@ -11,8 +11,8 @@ import "./Main.css";
 
 export default function Main() {
   return (
-    <div id="main-container" className="main">
-      <div className="text--name">&lt;Ethan Bowen/&gt;;</div>
+    <div className="main">
+      <div className="text--name">&lt;Ethan Bowen/&gt;</div>
       <Link id="resume-link" className="box box--first" to="/resume">
         <FontAwesomeIcon icon={faFileLines} className="box--icon" />
         <span className="text">Resume</span>

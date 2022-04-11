@@ -1,7 +1,9 @@
 @import "../../../scss/functions";
 @import "../../../scss/mixins";
 
-
+body {
+  font-family: 'Ubuntu Mono', monospace;
+}
 .main-theme {
   width: 100%;
   height: 100%;
@@ -10,8 +12,6 @@
     background: theme("background-color");
     color: theme("text-color");
   }
-
-  font-family: sans-serif;
 }
 
 a {
@@ -29,13 +29,11 @@ a {
   text-decoration: underline;
 }
 
-
-
 .main-theme .setters ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  float:right;
+  float: right;
 }
 
 .main-theme .setters li {

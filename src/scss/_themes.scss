@@ -1,8 +1,8 @@
-$retro-primary-1:#120458;
-$retro-primary-2:#ff00a0;
-$retro-primary-3:#fe75fe;
-$retro-primary-4:#7a04eb;
-$retro-primary-5:#ff124f;
+$retro-primary-1: #120458;
+$retro-primary-2: #ff00a0;
+$retro-primary-3: #fe75fe;
+$retro-primary-4: #7a04eb;
+$retro-primary-5: #ff124f;
 
 $themes: (
   light: (
@@ -10,17 +10,20 @@ $themes: (
     text-color: black,
     nav-link-color: black,
     link-color: black,
+    link-hover-color: yellow,
   ),
   dark: (
     background-color: black,
     text-color: white,
     nav-link-color: white,
     link-color: white,
+    link-hover-color: blue,
   ),
   retro: (
     background-color: $retro-primary-1,
     text-color: $retro-primary-2,
     nav-link-color: $retro-primary-3,
     link-color: $retro-primary-4,
-  )
+    link-hover-color: $retro-primary-4,
+  ),
 );

@@ -1,12 +1,12 @@
-.theme-light a {
-  color: black;
+@import "../../../scss/functions";
+@import "../../../scss/mixins";
+
+a {
+  @include themify() {
+    color: theme("link-color");
+  }
 }
-.theme-dark a {
-  color: white;
-}
-.theme-retro a {
-  color: #7a04eb;
-}
+
 
 .section-header {
   text-align: center;
@@ -29,5 +29,3 @@
 .place-content-center {
   place-content: center;
 }
-
-/*# sourceMappingURL=Resume.css.map */
