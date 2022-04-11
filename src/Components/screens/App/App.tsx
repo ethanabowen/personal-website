@@ -16,8 +16,16 @@ export default function App() {
     <ThemeProvider>
       <CssThemeProvider>
         <div className="main-theme">
-          <CssThemeSetter />
-          <ThemeSetter />
+          <div className="setters">
+            <ul>
+              <li>
+                <ThemeSetter />
+              </li>
+              <li>
+                <CssThemeSetter />
+              </li>
+            </ul>
+          </div>
           {/*<Navigation />*/}
           <WebRoutes />
         </div>

@@ -3,9 +3,18 @@
 
 .card {
   @include themify() {
-  background-color: theme("background-color");
-  border: grey 1px;
+    background-color: theme("background-color");
+    border: grey 1px;
   }
+}
+
+.card-text-margin {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.strong {
+  font-weight: bold;
 }
 
 .company {

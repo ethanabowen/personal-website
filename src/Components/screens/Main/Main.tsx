@@ -3,7 +3,7 @@ import {
   faDraftingCompass,
   faFileLines,
   faRobot,
-  faStairs,
+  faLightbulb,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { Link } from "react-router-dom";
@@ -12,21 +12,22 @@ import "./Main.css";
 export default function Main() {
   return (
     <div id="main-container" className="main">
-      <Link id="resume-link" className="box" to="/resume">
+      <div className="text--name">&lt;Ethan Bowen/&gt;;</div>
+      <Link id="resume-link" className="box box--first" to="/resume">
         <FontAwesomeIcon icon={faFileLines} className="box--icon" />
-        <div className="text">Resume</div>
+        <span className="text">Resume</span>
       </Link>
       <Link id="projects-link" className="box" to="/projects">
         <FontAwesomeIcon icon={faDraftingCompass} className="box--icon" />
-        <div className="text">Projects</div>
+        <span className="text">Projects</span>
       </Link>
       <Link id="blog-link" className="box" to="/blog">
-        <FontAwesomeIcon icon={faStairs} className="box--icon" />
-        <div className="text">Blog</div>
+        <FontAwesomeIcon icon={faLightbulb} className="box--icon" />
+        <span className="text">Blog</span>
       </Link>
       <Link id="about-link" className="box" to="/about">
         <FontAwesomeIcon icon={faRobot} className="box--icon" />
-        <div className="text">About Me</div>
+        <span className="text">About Me</span>
       </Link>
     </div>
   );

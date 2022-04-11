@@ -13,7 +13,7 @@ function Resume() {
       <Personal />
 
       <div className="section-header">Education</div>
-      <div className="row justify-content-center">
+      <div className="row col-8 justify-content-center m-auto">
         <Schools />
       </div>
 
@@ -23,14 +23,14 @@ function Resume() {
       </div>
 
       <div className="section-header">Tech Skills</div>
-      <div className="row">
+      <div className="row col-8 justify-content-center m-auto">
         <Skills />
       </div>
 
       <div className="section-header">
         Experience ({personal.yearsExperience}+ years)
       </div>
-      <div className="row justify-content-center">
+      <div className="row col-10 justify-content-center m-auto">
         <Jobs />
       </div>
 

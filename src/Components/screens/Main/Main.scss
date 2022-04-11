@@ -2,61 +2,96 @@
 @import "../../../scss/mixins";
 
 .main {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  display: grid;
   align-items: center;
+
   height: 100vh;
-}
-.box--icon {
-  margin-right: 10px;
-  margin-bottom: 10px;
-  height: 25%;
-
-
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
 }
 
 .box {
-  display: flex;
-  flex-flow: row wrap;
-  flex-basis: 34%;
-  justify-content: center;
-  align-content: center;
+  width: 250px;
   @include themify() {
     background: theme("background-color");
     color: theme("text-color");
-    box-shadow: 0px 8px 16px 0px theme("text-color");
+    //box-shadow: 0px 8px 16px 0px theme("text-color");
   }
+  text-align: left;
   cursor: pointer;
-  width: 10em;
-  height: 10em;
+
   margin: 1em;
   text-decoration: none;
 }
+.box--first {
+  margin-top: 2em;
+}
+
+.box:hover {
+  text-decoration: underline;
+}
+
+.box--icon {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  font-size: 1.3rem;
+}
 
 .text {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  
   border: 0;
   text-transform: uppercase;
   font-weight: 900;
   font-style: bold;
-  font-size: 3.3rem;
+  font-size: 2.3rem;
+  margin-left: 5px;
   @include themify() {
     color: theme("text-color");
   }
-  line-height: 0.8;
 }
 
-@media (max-width: 991px) {
-  /*sm */
-  .box {
-    flex-basis: 51%;
+.text--name {
+  white-space: nowrap;
+  font-weight: 900;
+  font-style: bold;
+  font-size: 2.3rem;
+  margin: 2em;
+
+  overflow: hidden;
+  @include themify() {
+    color: theme("text-color");
+    border-right: 0.15em solid theme("text-color");
   }
-  .text {
-    font-size: 2.3rem;
+  margin: 0; //scrolling effect
+  letter-spacing: .3em;
+  animation: typing 2.5s steps(40, end), blinking-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
+
+@keyframes blinking-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  25% {
+    border-color: inherit;
+  }
+  50% {
+    border-color: transparent;
+  }
+  5% {
+    border-color: inherit;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+

@@ -142,7 +142,7 @@ export const jobs: Jobs = {
             company: "CBORD",
             title: "Software Engineer",
             startDate: "04/2019",
-            endDate: "03/2020",
+            endDate: "04/2021",
             details: [
                 "Led external team members daily on technical and domain-specific topics",
                 "Initiated several projects and proof of concepts in an effort to push the team forward",

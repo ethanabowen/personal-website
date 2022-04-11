@@ -55,7 +55,7 @@ function HobbyProject({
         <div className="col-lg-6 col-sm-10 justify-content-left">
           <div className="row">
             <strong>Description:</strong>
-            <div>{parse(description)}</div>Ï            
+            <div>{parse(description)}</div>
           </div>
 
           {credits && (

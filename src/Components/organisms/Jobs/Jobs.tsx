@@ -77,10 +77,10 @@ export default function Jobs() {
 function Job(params: { showTitle: string; showDivider: string; job: JobType }) {
   const job = params.job;
   return (
-    <div className={"card col-sm-10 col-xs-12"}>
+    <div className={"card col-xl-6 col-lg-11"}>
       <div className="card-body">
         {params.showTitle && (
-          <div className="card-title">
+          <div className="card-title text-center">
             <FontAwesomeIcon
               className="company-icon mr-3"
               icon={getIcon(job.icon)}
@@ -90,17 +90,22 @@ function Job(params: { showTitle: string; showDivider: string; job: JobType }) {
             </a>
           </div>
         )}
-        <div className="card-subtitle">
+        <div className="card-subtitle text-center">
           <div className="row">
             <span className="col">
               <strong>{job.title}</strong>
             </span>
-            <span className="col text-right">
-              {job.startDate} - {job.endDate}
+            <span className="col ml-2 text-left">
+              {job.startDate} -{" "}
+              {job.endDate == "Present" ? (
+                <span className="strong">{job.endDate}</span>
+              ) : (
+                job.endDate
+              )}
             </span>
           </div>
         </div>
-        <div className="card-text">
+        <div className="card-text ml-5 mr-5 mt-2">
           <ul>
             {job.details != null &&
               job.details.map((detail: string, index: number) => {
@@ -113,9 +118,10 @@ function Job(params: { showTitle: string; showDivider: string; job: JobType }) {
           </ul>
         </div>
       </div>
-      {job.company !== "BNSF Railway" && params.showDivider && (
+      {/*job.company !== "BNSF Railway" && params.showDivider && (
         <hr className="divider" />
-      )}
+      )*/}
+      <hr className="divider" />
     </div>
   );
 }

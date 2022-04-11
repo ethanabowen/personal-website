@@ -20,7 +20,7 @@ function Certification({ link, image, startDate, endDate }: CertificationType) {
           <img className="cert-image-dimensions" alt="" src={image} />
         </a>
       </div>
-      <div className="row place-content-center">
+      <div className="row text-center">
         <span>
           {startDate} - {endDate}
         </span>
