@@ -73,20 +73,21 @@ export default function Camera(props: any) {
       },
       async function(err: string, response: any) {
         if (err) {
-          return console.error(err);
+          console.error("Get Data Endpoint Error:", err);
+          return err;
         }
 
         //console.log("Data endpoint: " + response.DataEndpoint);
         kinesisVideoArchivedContent.endpoint = response.DataEndpoint; //new AWS.Endpoint(response.DataEndpoint);
 
         // Get a Streaming Session URL
-        console.log("Fetching Streaming Session URL");
-
+        console.debug("Fetching Streaming Session URL");
         await kinesisVideoArchivedContent.getHLSStreamingSessionURL(
           streamingOptions,
           function(err: string, response: any) {
             if (err) {
-              return console.error(err);
+              console.error("Get Streaming URL Session Error:", err);
+              return err;
             }
 
             //console.log("HLS Streaming Session URL: " + response.HLSStreamingSessionURL);

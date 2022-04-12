@@ -1,0 +1,24 @@
+@import "../../../scss/functions";
+@import "../../../scss/mixins";
+
+.main--construction {
+  display: grid;
+
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.text--title {
+  font-weight: 250;
+  font-style: bold;
+  font-size: 2.3rem;
+  text-decoration: underline;
+}
+
+.construction--icon {
+  font-size: 5.3rem;
+  justify-self: center;
+  margin: 1rem;
+}

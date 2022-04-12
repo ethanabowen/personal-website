@@ -8,12 +8,15 @@ import WebsiteAuth from "../../atoms/WebsiteAuth/WebsiteAuth";
 
 import Security from "../../atoms/Security/Security";
 import Storage from "../../atoms/Storage/Storage";
+import Construction from "../../screens/Construction/Construction";
 
 export default function WebRoutes() {
   /* <Routes> looks through its children <Route>s and
             renders the first one that matches the current URL. */
   return (
     <Routes>
+      <Route path="/about" element={<Construction />} />
+      <Route path="/blog" element={<Construction />} />
       <Route path="/resume" element={<Resume />} />
       <Route path="/projects" element={<Projects />} />
       <Route
