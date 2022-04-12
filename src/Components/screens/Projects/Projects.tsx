@@ -9,8 +9,8 @@ import { HobbyProject as HobbyProjectType } from "../../../types";
 
 export default function Projects() {
   return (
-    <>
-      <div className="section-header">Projects</div>
+    <div className="main--projects">
+      <div className="section-header--projects">Projects</div>
       <div className="row justify-content-center">
         {hobbyProjects.map((project, index) => {
           return <HobbyProject key={"hobbyProject" + index} {...project} />;
@@ -25,7 +25,7 @@ export default function Projects() {
           })}
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -12,7 +12,11 @@
 }
 
 .box {
-  width: 250px;
+  display:flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  align-items:center;
+  width: 35%;
   @include themify() {
     background: theme("background-color");
     color: theme("text-color");
@@ -21,7 +25,8 @@
   text-align: left;
   cursor: pointer;
 
-  margin: 1em;
+  margin: auto;
+  margin-top:1em;
   text-decoration: none;
 }
 .box--first {
@@ -39,7 +44,9 @@
 .box--icon {
   margin-bottom: 5px;
   margin-left: 5px;
-  font-size: 1.3rem;
+
+  width: 2.75vw;
+  height: 2.75vw;
 }
 
 .text {
@@ -47,11 +54,13 @@
   text-transform: uppercase;
   font-weight: 250;
   font-style: bold;
-  font-size: 2.3rem;
+  font-size: 2.75vw;
+  margin:auto;
   margin-left: 5px;
   @include themify() {
     color: theme("text-color");
   }
+  line-height: 0.8;
 }
 
 .text--name {
@@ -59,7 +68,7 @@
   
   font-weight: 250;
   font-style: bold;
-  font-size: 2.3rem;
+  font-size: 2.5vw;
 
   overflow: hidden;
   @include themify() {
