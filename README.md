@@ -21,6 +21,7 @@ https://ethanabowen.com
 :rocket: **Future**
 
 * Complete CDK rest of backend (KVS, Cognito, Rest APIs, and Lambdas).
+* SCSS cleanup across pages
 
 
 # Lessons Learned

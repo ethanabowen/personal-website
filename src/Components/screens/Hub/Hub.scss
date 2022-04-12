@@ -3,6 +3,7 @@
 
 .main--hub {
   display: grid;
+  align-items: center;
 
   height: 100vh;
   justify-content: center;
@@ -15,4 +16,8 @@
   font-style: bold;
   font-size: 2.3rem;
   text-decoration: underline;
+}
+
+.box--hub {
+  width:auto;
 }

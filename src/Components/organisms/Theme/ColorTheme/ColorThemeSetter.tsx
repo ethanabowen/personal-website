@@ -38,4 +38,4 @@ export default function ColorThemeSetter() {
   );
 }
 
-const colorThemeOptions = ["light", "dark", "retro"];
+const colorThemeOptions = ["light", "dark", "retro", "sad"];

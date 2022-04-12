@@ -3,6 +3,8 @@ import { Amplify, Auth } from "aws-amplify";
 import { CognitoHostedUIIdentityProvider } from "@aws-amplify/auth";
 import { config } from "./config";
 
+import './WebsiteAuth.css';
+
 // one time configuration for authentication
 if (!Amplify.Auth.userPool) {
   /*Amplify.configure(
@@ -56,5 +58,5 @@ export default function WebsiteAuth(props: any) {
     );
   }, []);
 
-  return <>{!cognitoUser ? <div>Redirecting...</div> : props.children}</>;
+  return <>{!cognitoUser ? <div className="main--websiteauth">Redirecting...</div> : props.children}</>;
 }
