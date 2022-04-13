@@ -8,7 +8,7 @@ export default function Security() {
     <div className="main--security">
       <button onClick={() => Auth.signOut()}>Sign Out</button>
       <div className="row">
-        <div className="p-5">
+        <div className="col-xl-6 col-lg-12 p-5">
           <Camera cameraName="Nursery" streamName="eufy-nursery-stream" />
         </div>
         <div className="col-xl-6 col-lg-12 p-5">

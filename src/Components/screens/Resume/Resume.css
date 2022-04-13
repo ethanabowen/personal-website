@@ -23,11 +23,6 @@
   border-bottom: grey 1px solid;
 }
 
-.techdomain {
-  text-transform: capitalize;
-  text-align: center;
-}
-
 /* For Certification text center, probably a better way to do this */
 .place-content-center {
   place-content: center;

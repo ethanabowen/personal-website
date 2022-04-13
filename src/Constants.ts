@@ -127,8 +127,8 @@ export const jobs: Jobs = {
         {
             company: "CBORD",
             title: "Advisory Software Engineer",
-            startDate: "03/2020",
-            endDate: "Present",
+            startDate: "04/2020",
+            endDate: "04/2021",
             details: [
                 "Led, designed, and coded a robust multi-tenant analytics solution (QuickSight) spanning multiple AWS regions",
                 "Serving as technical lead on company wide Hub integration project",
@@ -142,7 +142,7 @@ export const jobs: Jobs = {
             company: "CBORD",
             title: "Software Engineer",
             startDate: "04/2019",
-            endDate: "04/2021",
+            endDate: "04/2020",
             details: [
                 "Led external team members daily on technical and domain-specific topics",
                 "Initiated several projects and proof of concepts in an effort to push the team forward",
