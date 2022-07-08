@@ -1,6 +1,6 @@
 import { Certification, HobbyProject, Jobs, Personal, School, Skills } from "./types"
 
-export const welcome = "Thanks for checking out my site! I used AWS Amplify to help host it."
+export const welcome = "Thanks for checking out my site! Please reach out with any thoughts/question you might have for me!"
 
 export const personal: Personal = {
     name: "Ethan Bowen",
