@@ -8,6 +8,9 @@
   justify-content: center;
   align-content: center;
   text-align: center;
+
+
+  padding-bottom: 150px;
 }
 
 .text--title {
@@ -52,23 +55,23 @@
 }
 
 .post--title {
-  font-size: 18px;
+  font-size: 3.0em;
   padding-left: 10px;
   margin-bottom: 15px;
 }
 .post--footer {
   min-width: 100%;
-  font-size: 10px;
+  font-size: 1em;
 }
 
 .post--author {
   float: left;
-  padding-left: 3px;
+  padding-left: 15px;
 }
 
 .post--publish--date {
   float: right;
-  padding-right: 3px;
+  padding-right: 15px;
 }
 
 .post:hover {
