@@ -20,15 +20,6 @@ a {
   }
 }
 
-.nav-link {
-  @include themify() {
-    color: theme("nav-link-color") !important;
-  }
-}
-.nav-link:hover {
-  text-decoration: underline;
-}
-
 .main-theme .setters {
   display: flow-root;
 }

@@ -9,7 +9,6 @@ export type Personal = {
 export type Social = {
   linkedIn: string;
   gitHub: string;
-  faceBook: string;
 };
 
 export type School = {
@@ -57,9 +56,5 @@ export interface Credit {
 }
 
 export type Certification = {
-  name: string;
-  link: string;
-  image: string;
-  startDate: string;
-  endDate: string;
+  image: any;
 };

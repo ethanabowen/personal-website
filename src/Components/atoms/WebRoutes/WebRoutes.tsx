@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
 import Main from "../../screens/Main/Main";
-import Blog from "../../screens/Blog/Blog";
 import Hub from "../../screens/Hub/Hub";
 import Projects from "../../screens/Projects/Projects";
 import Resume from "../../screens/Resume/Resume";
@@ -16,8 +15,6 @@ export default function WebRoutes() {
             renders the first one that matches the current URL. */
   return (
     <Routes>
-      <Route path="/about" element={<Construction />} />
-      <Route path="/blog" element={<Blog />} />
       <Route path="/resume" element={<Resume />} />
       <Route path="/projects" element={<Projects />} />
       <Route

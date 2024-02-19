@@ -77,7 +77,7 @@ export default function Jobs() {
 function Job(params: { showTitle: string; showDivider: string; job: JobType }) {
   const job = params.job;
   return (
-    <div className={"card col-xl-6 col-lg-11"}>
+    <div className={"card col-7"}>
       <div className="card-body">
         {params.showTitle && (
           <div className="card-title text-center">

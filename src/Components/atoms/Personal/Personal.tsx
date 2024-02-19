@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
-  faGithub,
-  faFacebook,
+  faGithub
 } from "@fortawesome/free-brands-svg-icons";
 import "./Personal.css";
 import { personal } from "../../../Constants";
@@ -23,9 +22,6 @@ export default function Personal() {
           </a>
           <a className="social-icon" href={personal.social.gitHub}>
             <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a className="social-icon" href={personal.social.faceBook}>
-            <FontAwesomeIcon icon={faFacebook} />
           </a>
         </div>
       </div>

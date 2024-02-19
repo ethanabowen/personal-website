@@ -1,6 +1,41 @@
 @import "../../../scss/functions";
 @import "../../../scss/mixins";
 
+@import "typed";
+
+.main--statement {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.main--aboutme {
+  padding: 0 0 0 3px;
+  @include typed(
+    (
+      "Architect": (
+        background-color: red,
+      ),
+      "Collaborate": (
+        background-color: green,
+      ),
+      "Engineer": (
+        background-color: blue,
+      ),
+      "Implement": (
+        background-color: whitesmoke,
+      )),
+      (type: 0.15),
+      (
+        iterations: infinite,
+        caret-speed: 0.65,
+        caret-width: 2px,
+        caret-color: orange,
+        caret-space: 1px
+      ),
+    
+  );
+}
+
 .main {
   display: grid;
   align-items: center;
@@ -12,10 +47,10 @@
 }
 
 .box {
-  display:flex;
+  display: flex;
   flex-direction: row wrap;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   width: 35%;
   @include themify() {
     background: theme("background-color");
@@ -26,7 +61,7 @@
   cursor: pointer;
 
   margin: auto;
-  margin-top:1em;
+  margin-top: 1em;
   text-decoration: none;
 }
 .box--first {
@@ -36,17 +71,9 @@
 .box:hover {
   @include themify() {
     background: theme("link-hover-color");
-    
+
     //box-shadow: 0px 8px 16px 0px theme("text-color");
   }
-}
-
-.box--icon {
-  margin-bottom: 5px;
-  margin-left: 5px;
-
-  width: 2.75vw;
-  height: 2.75vw;
 }
 
 .text {
@@ -55,7 +82,7 @@
   font-weight: 250;
   font-style: bold;
   font-size: 2.75vw;
-  margin:auto;
+  margin: auto;
   margin-left: 5px;
   @include themify() {
     color: theme("text-color");
@@ -64,11 +91,11 @@
 }
 
 .text--name {
-  white-space: nowrap;
-  
+  padding-left: 5px;
+
   font-weight: 250;
   font-style: bold;
-  font-size: 2.5vw;
+  font-size: 2vw;
 
   overflow: hidden;
   @include themify() {
@@ -76,9 +103,9 @@
     border-right: 0.15em solid theme("text-color");
   }
   margin: 0 auto; //scrolling effect
-  
+
   letter-spacing: 1em;
-  animation: typing 2.5s steps(40, end), blinking-caret 1s step-end infinite;
+  animation: typing 2s steps(30, end), blinking-caret 1s step-end infinite;
 }
 
 @keyframes typing {

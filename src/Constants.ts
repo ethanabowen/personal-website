@@ -6,11 +6,10 @@ export const personal: Personal = {
     name: "Ethan Bowen",
     email: "ethan.a.bowen@gmail.com",
     whoAmI: "Passionate, driven, concept-focused technologist eager to create meaningful products that impact lives.",
-    yearsExperience: 9,
+    yearsExperience: 11,
     social: {
         linkedIn: "https://www.linkedin.com/in/ethan-bowen-89115250/",
         gitHub: "https://github.com/ethanabowen",
-        faceBook: "https://www.facebook.com/ethan.a.bowen"
     }
 }
 
@@ -233,10 +232,10 @@ export const collegeProjects: string[] = [
     "Implementation of Support Vector Machine and creation of custom Kernel",
     "Constant experimentation with technologies to understand their place in the development ecosystem"]
 
-export const hobbyProjects: HobbyProject[] = [
+export const isometricTileGenerationProject: HobbyProject =
     {
         title: '<a href="https://ethanabowen.github.io/isometric-terrain-generation-hosting/">Isometric Terrain Generator</a>',
-        description: "Using a home brewed Perlin Noise algorithm, this project combines Isometric Tileset Art with my vision of dynamic Terrain Generation. There are preset worlds setup for exploration and play! <strong>Maximize for best experience.</strong> Try out the Zoom (Right Click) and Drag features while exploring the different terrains!  <a href=\"https://ethanabowen.github.io/isometric-terrain-generation-hosting/\">Try it out!</a>",
+        description: "Using a home brewed Perlin Noise algorithm, this project combines Isometric Tileset Art with my vision of dynamic Terrain Generation. There are preset worlds setup for exploration and play! <strong>Maximize for best experience.</strong> <a href=\"https://ethanabowen.github.io/isometric-terrain-generation-hosting/\">Try it out!</a>",
         lastPublishDate: "01/03/2021",
         credits:
             [
@@ -254,43 +253,4 @@ export const hobbyProjects: HobbyProject[] = [
                 }
             ],
         gitHubUrl: "https://github.com/ethanabowen/isometric-terrain-generation"
-    },
-    {
-        title: "Generate Random Object Values (GROV)",
-        description: "On-going project that will populate, recursively, any Java object.  Best used for Testing with complex schemas or for stress testing.  I've implemented this twice professionally and have decided to start rewriting it for my own work.",
-        lastPublishDate: "11/09/2020",
-        gitHubUrl: "https://github.com/ethanabowen/GROV"
-    },
-]
-
-
-export const certifications: Certification[] = [
-    {
-        name: "AWS Cloud Practitioner",
-        link: "https://www.credly.com/badges/f866b75d-7266-4b06-83bf-a8d1c535e95c",
-        image: "https://images.credly.com/size/340x340/images/68468004-5a85-4f3b-bc58-590773979486/AWS-CloudPractitioner-2020.png",
-        startDate: "09/20",
-        endDate: "01/25"
-    },
-    {
-        name: "AWS Developer Associate",
-        link: "https://www.credly.com/badges/3a7b71a8-fd59-41a4-be34-359e292487b5",
-        image: "https://images.credly.com/size/340x340/images/598f6ac6-2dbd-4394-8ae4-943b2f4c43ea/AWS-Developer-Associate-2020.png",
-        startDate: "12/21",
-        endDate: "12/24"
-    },
-    {
-        name: "AWS Solutions Architect Associate",
-        link: "https://www.credly.com/badges/1e44a067-d3ba-47cc-8a80-3e4c9e9fc670",
-        image: "https://images.credly.com/size/340x340/images/4bc21d8b-4afe-4fbd-9a90-a9de8bf7b240/AWS-SolArchitect-Associate-2020.png",
-        startDate: "08/21",
-        endDate: "08/24"
-    },
-    {
-        name: "AWS SysOps Admin Associate",
-        link: "https://www.credly.com/badges/c7436a9b-8c42-4a2c-a9d5-5ae831f1a445",
-        image: "https://images.credly.com/size/340x340/images/bf588058-87cc-4cbd-94b0-ef0385fb4371/AWS-SysOpAdmin-Associate-2020.png",
-        startDate: "01/22",
-        endDate: "01/25"
     }
-]

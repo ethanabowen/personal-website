@@ -1,5 +1,5 @@
-$retro-primary-1: #120458;
-$retro-primary-2: #ff00a0;
+$retro-primary-1: #1c1636;
+$retro-primary-2: #fc74c6;
 $retro-primary-3: #fe75fe;
 $retro-primary-4: #7a04eb;
 $retro-primary-5: #ff124f;
@@ -9,32 +9,27 @@ $themes: (
     background-color: whitesmoke,
     text-color: black,
     nav-link-color: black,
+    nav-dropdown-color: whitesmoke,
     link-color: black,
     link-hover-color: yellow,
-    card-border: black
+    card-border: black,
   ),
   dark: (
     background-color: black,
     text-color: white,
     nav-link-color: white,
+    nav-dropdown-color: white,
     link-color: white,
     link-hover-color: blue,
-    card-border: white
+    card-border: white,
   ),
   retro: (
     background-color: $retro-primary-1,
     text-color: $retro-primary-2,
     nav-link-color: $retro-primary-3,
+    nav-dropdown-color: $retro-primary-2,
     link-color: $retro-primary-4,
     link-hover-color: $retro-primary-4,
-    card-border: $retro-primary-2
-  ),
-  sad: (
-    background-color: #A3ABBD,
-    text-color: #96264F,
-    nav-link-color: #3386D8,
-    link-color: #D05D7F,
-    link-hover-color: #3386D8,
-    card-border: #96264F
+    card-border: $retro-primary-2,
   ),
 );
