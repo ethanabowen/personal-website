@@ -35,13 +35,12 @@ export type Jobs = {
 export type Job = {
   company: string;
   title: string;
-  startDate: string;
-  endDate: string;
+  startYear: string;
+  durationInYears: string;
   details: string[];
   site: string;
   icon?: string;
 };
-
 export type HobbyProject = {
   title: string;
   description: string;
@@ -58,3 +57,10 @@ export interface Credit {
 export type Certification = {
   image: any;
 };
+
+export type TimelineEntry = {
+  month: string,
+  year: string,
+  title: string,
+  description: string
+}

@@ -108,13 +108,132 @@ export const skills : Skills = {
     "Initiated knowledge sharing sessions on multiple teams"
 ]*/
 
+// export const jobs: Jobs = {
+//     slalomBuild: [
+//         {
+//             company: "Slalom Build",
+//             title: "Software Architect",
+//             startDate: "04/2021",
+//             endDate: "Present",
+//             details: [
+//                 "Consultant to multiple clients ranging in software stacks and solutions.",
+//             ],
+//             site: "https://www.slalombuild.com/",
+//             icon: "skiing"
+//         }
+//     ],
+//     cbord: [
+//         {
+//             company: "CBORD",
+//             title: "Advisory Software Engineer",
+//             startDate: "04/2020",
+//             endDate: "04/2021",
+//             details: [
+//                 "Led, designed, and coded a robust multi-tenant analytics solution (QuickSight) spanning multiple AWS regions",
+//                 "Serving as technical lead on company wide Hub integration project",
+//                 "Integrating AWS services such as functions, storage, and authentication throughout CBORD",
+//                 "Introducing and harnessing IaC with Serverless and Terraform",
+//             ],
+//             site: "https://www.cbord.com/",
+//             icon: "university"
+//         },
+//         {
+//             company: "CBORD",
+//             title: "Software Engineer",
+//             startDate: "04/2019",
+//             endDate: "04/2020",
+//             details: [
+//                 "Led external team members daily on technical and domain-specific topics",
+//                 "Initiated several projects and proof of concepts in an effort to push the team forward",
+//                 "Developed React webpages for CSGold's web migration"
+//             ],
+//             site: "https://www.cbord.com/",
+//             icon: "university"
+//         }
+//     ],
+//     lockheedMartin: [{
+//         company: "Lockheed Martin - Skunkworks",
+//         title: "Software Engineer III",
+//         startDate: "09/2018",
+//         endDate: "04/2019",
+//         details: [
+//             "Built a plugin-based dependency injection library using native Java",
+//             "Refactored and heavily optimized entire CI/CD pipeline via Jenkins/Groovy",
+//             "Initiated more through SCRUM practices (retrospectives, code reviews, better planning)"
+//         ],
+//         site: "https://www.lockheedmartin.com/en-us/who-we-are/business-areas/aeronautics/skunkworks.html",
+//         icon: "fighter-jet"
+//     }],
+//     pier1: [{
+//         company: "Pier 1 Imports",
+//         title: "Software Engineer II",
+//         startDate: "04/2016",
+//         endDate: "09/2018",
+//         details: [
+//             "Developed micro-service architecture to provide reliable, tolerant, and extensible Supply Chain products",
+//             "Adopted the open-source mindset by actively seeking and applying new opportunities to enhance the customer experience",
+//             "Created 'Generic Class Generator' in Java that populated any Java object with random values (recursively if needed)"
+//         ],
+//         site: "https://www.pier1.com/",
+//         icon: "store"
+//     }],
+//     bnsf: [{
+//         company: "BNSF Railway",
+//         title: "Software Developer II",
+//         startDate: "09/2012",
+//         endDate: "04/2016",
+//         details: [
+//             "Drove preventative mechanical derailment efforts on WebSphere, Java, UNIX, and TIBCO platforms",
+//             "Implemented “Train Matching” software in charge of aggregating multiple real-time data feeds",
+//             "Resolved on-call production issues leading to several initiatives for system optimization and stability",
+//         ],
+//         site: "https://www.bnsf.com/",
+//         icon: "train"
+//     }],
+//     rtl: [{
+//         company: "RTL Genomics",
+//         title: "Intern",
+//         startDate: "11/2011",
+//         endDate: "03/2012",
+//         details: [
+//             "Assist and create stream line automation of DNA analysis processes using C#,Python, and UNIX",
+//             "Ground up creation of a multithreaded Server-Client application using C#’s TCP API"
+//         ],
+//         site: "https://rtlgenomics.com/",
+//         icon: "dna"
+//     }],
+//     halliburton: [{
+//         company: "Halliburton",
+//         title: "Intern",
+//         startDate: "06/2011",
+//         endDate: "08/2011",
+//         details: [
+//             "Creating in-house C# applications used to meta-manage data from a database",
+//             "Familiarized selfwith FORTRAN and VisualBasic and embedded DLLs into other languages"
+//         ],
+//         site: "https://www.halliburton.com/"
+//     }],
+//     motio: [{
+//         company: "Motio Inc",
+//         title: "Intern",
+//         startDate: "05/2010",
+//         endDate: "08/2010",
+//         details: [
+//             "Familiarized self with IBM Cognos BI environment while applying to it programming",
+//             "Programmed on MotioPI, a java - based product used to accompany the IBMCognos platform"
+//         ],
+//         site: "https://motio.com/"
+//     }
+//     ]
+// }
+
 export const jobs: Jobs = {
     slalomBuild: [
         {
             company: "Slalom Build",
             title: "Software Architect",
-            startDate: "04/2021",
-            endDate: "Present",
+            durationInYears: "3",
+            startYear:"2021",
             details: [
                 "Consultant to multiple clients ranging in software stacks and solutions.",
             ],
@@ -126,8 +245,8 @@ export const jobs: Jobs = {
         {
             company: "CBORD",
             title: "Advisory Software Engineer",
-            startDate: "04/2020",
-            endDate: "04/2021",
+            durationInYears: "1",
+            startYear:"2020",
             details: [
                 "Led, designed, and coded a robust multi-tenant analytics solution (QuickSight) spanning multiple AWS regions",
                 "Serving as technical lead on company wide Hub integration project",
@@ -140,8 +259,8 @@ export const jobs: Jobs = {
         {
             company: "CBORD",
             title: "Software Engineer",
-            startDate: "04/2019",
-            endDate: "04/2020",
+            durationInYears: "1",
+            startYear:"2019",
             details: [
                 "Led external team members daily on technical and domain-specific topics",
                 "Initiated several projects and proof of concepts in an effort to push the team forward",
@@ -154,8 +273,8 @@ export const jobs: Jobs = {
     lockheedMartin: [{
         company: "Lockheed Martin - Skunkworks",
         title: "Software Engineer III",
-        startDate: "09/2018",
-        endDate: "04/2019",
+        durationInYears: "1",
+        startYear:"2018",
         details: [
             "Built a plugin-based dependency injection library using native Java",
             "Refactored and heavily optimized entire CI/CD pipeline via Jenkins/Groovy",
@@ -167,8 +286,8 @@ export const jobs: Jobs = {
     pier1: [{
         company: "Pier 1 Imports",
         title: "Software Engineer II",
-        startDate: "04/2016",
-        endDate: "09/2018",
+        durationInYears: "2",
+        startYear:"2016",
         details: [
             "Developed micro-service architecture to provide reliable, tolerant, and extensible Supply Chain products",
             "Adopted the open-source mindset by actively seeking and applying new opportunities to enhance the customer experience",
@@ -180,8 +299,8 @@ export const jobs: Jobs = {
     bnsf: [{
         company: "BNSF Railway",
         title: "Software Developer II",
-        startDate: "09/2012",
-        endDate: "04/2016",
+        durationInYears: "4",
+        startYear:"2012",
         details: [
             "Drove preventative mechanical derailment efforts on WebSphere, Java, UNIX, and TIBCO platforms",
             "Implemented “Train Matching” software in charge of aggregating multiple real-time data feeds",
@@ -193,8 +312,8 @@ export const jobs: Jobs = {
     rtl: [{
         company: "RTL Genomics",
         title: "Intern",
-        startDate: "11/2011",
-        endDate: "03/2012",
+        durationInYears: "1",
+        startYear:"2011",
         details: [
             "Assist and create stream line automation of DNA analysis processes using C#,Python, and UNIX",
             "Ground up creation of a multithreaded Server-Client application using C#’s TCP API"
@@ -205,8 +324,8 @@ export const jobs: Jobs = {
     halliburton: [{
         company: "Halliburton",
         title: "Intern",
-        startDate: "06/2011",
-        endDate: "08/2011",
+        durationInYears: "1",
+        startYear:"2011",
         details: [
             "Creating in-house C# applications used to meta-manage data from a database",
             "Familiarized selfwith FORTRAN and VisualBasic and embedded DLLs into other languages"
@@ -216,8 +335,8 @@ export const jobs: Jobs = {
     motio: [{
         company: "Motio Inc",
         title: "Intern",
-        startDate: "05/2010",
-        endDate: "08/2010",
+        durationInYears: ".25",
+        startYear:"2010",
         details: [
             "Familiarized self with IBM Cognos BI environment while applying to it programming",
             "Programmed on MotioPI, a java - based product used to accompany the IBMCognos platform"

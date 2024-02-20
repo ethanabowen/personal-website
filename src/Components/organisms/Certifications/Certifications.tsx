@@ -14,7 +14,7 @@ export default function Certifications() {
   return (
     <>
       {certification_images.map((cert, index) => {
-        return <Certification key={`cert${index}`}image={cert} />;
+        return <Certification key={`cert${index}`} image={cert} />;
       })}
     </>
   );

@@ -95,14 +95,14 @@ function Job(params: { showTitle: string; showDivider: string; job: JobType }) {
             <span className="col">
               <strong>{job.title}</strong>
             </span>
-            <span className="col ml-2 text-left">
+            {/* <span className="col ml-2 text-left">
               {job.startDate} -{" "}
               {job.endDate === "Present" ? (
                 <span className="strong">{job.endDate}</span>
               ) : (
                 job.endDate
               )}
-            </span>
+            </span> */}
           </div>
         </div>
         <div className="card-text ml-5 mr-5 mt-2">
